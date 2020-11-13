@@ -1,6 +1,11 @@
 This is a website that consists of a login page, and a main page that shows data for a given class, and allows both for reading and changing said data. The site can still be viewed, but the database it connected to is no longer active.
-<br><p>The login page front-end is handled by login.php, which has the form structure and calls login2.php on submitting, and login.css, which styles the forms and buttons. Login2.php takes in the login information, checks if the user is valid, and if so, returns their information for the main page to use.</p>
-<p>The banner at the top is handled by nav.php, which has a drop down menu for classes, and a link to change passwords and logging out in the top right corner. nav.css styles it. Nav.js handles all of the buttons, and calls various .php files to communicate with the SQL server.</p>
-<p>Abet.php handles the body of the main page, which shows, for a given class and section, the existing data and a menu to change it. Abet.css styles it, and abet.js handles the delete buttons.</p>
-<p>Password.php is the password page, which is styled by password.css. Nav.js handles its buttons as well, since nav.js is a constant among the main and password pages.</p>
-<p>The rest of the php files are SQL queries.</p>
+
+![Image of Login](https://github.com/eplank18/best_hits/blob/main/Faux%20Abet%20Site/Login%20Example.PNG)
+<br><p>This is the login page. Login.php handles displaying the form, and when the submit button is pressed, running a php file to check the database for if the user exists with that information, and if so, logging them in and pulling up their data.</p>
+
+![Image of Password Page](https://github.com/eplank18/best_hits/blob/main/Faux%20Abet%20Site/Password%20Example.PNG)
+<p>The banner at the top is handled by a separate php page, and once you're logged in, is constant between the main page and this one. It shows dummy data, since the database I used it for is down, but if it were still up, the Dummy Options would be classes associated with the user in the database, and you would be able to pick between them.</p>
+<p>The main page being displayed there is the "change password" page. If there were a person logged in, it would show their name and email, and the form would take in the new password, and, after error checking it for having a lowercase and uppercase letter, a number, and being the same in both boxes, would go into the database and update it.</p>
+
+![Image of Abet Page](https://github.com/eplank18/best_hits/blob/main/Faux%20Abet%20Site/Abet%20Example.png)
+<p>This is a screenshot I have of dummy data while the database was still up. This is the main part of the website-the sql server would be queried for the data associated with the given user, section, and outcome, and from there, they could adjust the assessments there-change their weights, change their descriptions, add some, and click the red trash can icons to delete some.</p>
