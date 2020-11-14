@@ -5,3 +5,7 @@
 
 ![Graphics Example Image](https://github.com/eplank18/best_hits/blob/main/Graphics%20Final%20Project/Graphics%20Example.png)
 <p>This is what the website looks like in action. The sliders' look was added in HTML, and Javascripit was used to read in their values, figure out what values to use for each cube, then send that to the shaders and adjust the amount of fog accordingly.</p>
+
+<p>The cubes are shaded as follows. First, all of them are in fog. What this means is the value in the slider determines the amount of fog-which is defined as the opacity applied to each cube. The wooden-looking one is bump-mapped, meaning that-using toy box disp and toy box normals' patterns, the normals of the box are distorted, so the coordinates passed to the shader are different and are displayed with texture. The reddish one is toon shaded, which is a simplistic but visually appealing type of shading that uses one of three lightnesses of colors based on the y-coordinate of the object. So, the higher up the point, the lighter it is. The rainbow one is shaded according to what its normals are at a point, which results in a rather lovely, bright color scheme. It is not the easiest to make out in the image above, so here is that color scheme applied to a teapot.</p>
+
+![Teapot](https://github.com/eplank18/best_hits/blob/main/Graphics%20Final%20Project/download.png)
