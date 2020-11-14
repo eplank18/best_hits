@@ -1,7 +1,7 @@
 <?php
 
 $username = 'eplank2';
-$password = '68/k4J9g0+d4eJ+f';
+$password = [dummy password];
 $dbname = 'cosc465_eplank2';
 
 $major = $_GET['major'];
